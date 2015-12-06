@@ -1,0 +1,22 @@
+/* # Sidebars
+---------------------------------------------------------------------------------------------------- */
+
+.sidebar {
+	@include font(1.6, 2.4);
+}
+
+.sidebar li {
+	border-bottom: 1px solid $color-black;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.sidebar p:last-child,
+.sidebar ul > li:last-child {
+	margin-bottom: 0;
+}
+
+.sidebar .widget {
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+}
