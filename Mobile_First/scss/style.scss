@@ -1,7 +1,7 @@
-/* # Mono Basic Child Theme
-Theme Name: Altitude Pro Theme
-Theme URI: https://github.com/mbernth/Mono-Genesis
-Description: This is a basic child theme created for the Genesis Framework.
+/* # Genesis Child Theme 
+Theme Name: Genesis Mono Mobile First
+Theme URI: https://github.com/mbernth/Genesis_Mono_Mobile_First
+Description: This is a basic theme created for the Genesis Framework.
 Author: mono voce aps
 Author URI: http://www.monovoce.com/
 Template: genesis
@@ -23,6 +23,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 	@import "mixins";
 /*
+
 - Defaults
 	- Typographical Elements
 	- Headings
@@ -41,12 +42,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 	@import "structure_layout";
 /*
-- Grid
-	- Grid Container
-	- Columns
-*/
-	@import "site_grid";
-/*
 - Common Classes
 	- Avatar
 	- Genesis
@@ -64,13 +59,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 - Plugins
 	- Genesis eNews Extended
 	- Jetpack
-	- Thumbnail Grid Component
-	- Slider
 */
 	@import "plugins";
-	@import "component";
-	@import "slider";
-	@import "slider_custom";
 /*
 - Site Header
 	- Title Area
@@ -109,20 +99,38 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 /*
 - Media Queries
 	- Retina Display
+	- Min-width: 480px
+*/
+	@import "480";
+/*
+	- Min-width: 600px
+*/
+	@import "600";
+/*
+	- Min-width: 768px
+*/
+	@import "768";
+/*
+	- Min-width: 992px
+*/
+	@import "992";
+/*
+	- Min-width: 1326px
+*/
+	@import "1326";
+/*
 	- Max-width: 1200px
 */
-	@import "1200";
+/*	@import "1200"; */
 /*
 	- Max-width: 960px
 */
-	@import "960";
+/*	@import "960"; */
 /*
 	- Max-width: 800px
 */
-	@import "800";
+/*	@import "800"; */
 /*
 - Print Styles
 */
 	@import "print_styles";
-/*
-*/

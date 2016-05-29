@@ -1,3 +1,60 @@
+/* ## Column Classes
+--------------------------------------------- */
+/* Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css */
+
+.five-sixths,
+.four-sixths,
+.one-fourth,
+.one-half,
+.one-sixth,
+.one-third,
+.three-fourths,
+.three-sixths,
+.two-fourths,
+.two-sixths,
+.two-thirds {
+	float: left;
+	margin-left: 2.564102564102564%;
+}
+
+.one-half,
+.three-sixths,
+.two-fourths {
+	width: 48.717948717948715%;
+}
+
+.one-third,
+.two-sixths {
+	width: 31.623931623931625%;
+}
+
+.four-sixths,
+.two-thirds {
+	width: 65.81196581196582%;
+}
+
+.one-fourth {
+	width: 23.076923076923077%;
+}
+
+.three-fourths {
+	width: 74.35897435897436%;
+}
+
+.one-sixth {
+	width: 14.52991452991453%;
+}
+
+.five-sixths {
+	width: 82.90598290598291%;
+}
+
+.first {
+	clear: both;
+	margin-left: 0;
+}
+
+
 /* # Common Classes
 ---------------------------------------------------------------------------------------------------- */
 
@@ -78,17 +135,16 @@
 --------------------------------------------- */
 
 .archive-title {
-	@include font(2, 3.2);
+	@include font(2.0, 2.0);
 }
 
 .entry-title {
-	@include font(3.6, 3.2);
+	@include font(3.6, 3.6);
 }
 
 .entry-title a,
 .sidebar .widget-title a {
 	color: $color-black;
-	text-decoration:none;
 }
 
 .entry-title a:hover,
@@ -157,7 +213,7 @@ img.alignright,
 }
 
 .wp-caption-text {
-	@include font(1.4, 2);
+	@include font(1.4, 1.8);
 	font-weight: 700;
 	text-align: center;
 }

@@ -1,6 +1,3 @@
-/* # Media Queries
----------------------------------------------------------------------------------------------------- */
-
 @media only screen and (max-width: 960px) {
 
 	.site-inner,
@@ -14,6 +11,10 @@
 	.sidebar-content-sidebar .content,
 	.sidebar-content-sidebar .content-sidebar-wrap,
 	.sidebar-primary,
+	.sidebar-content .sidebar-primary,
+	.content-sidebar-sidebar .sidebar-primary,
+	.sidebar-sidebar-content .sidebar-primary,
+	.sidebar-content-sidebar .sidebar-primary,
 	.sidebar-secondary,
 	.sidebar-sidebar-content .content,
 	.sidebar-sidebar-content .content-sidebar-wrap,
@@ -21,20 +22,6 @@
 	.title-area {
 		width: 100%;
 	}
-	
-	.og-grid li {
-		@include grid(2, 40, 800);
-	}
-	
-	.og-grid li:nth-child(3n){
-		clear:left;
-	}
-	
-	.og-grid li:nth-child(3n){
-		clear: none;
-	}
-	
-	
 	.footer-widgets .widget-area {
 		@include grid(1, 0, 800);
 	}
@@ -44,7 +31,7 @@
 	}
 
 	.header-image .site-title > a {
-		background-position: center;
+		background-position: center top;
 	}
 
 	.genesis-nav-menu li,

@@ -8,18 +8,11 @@
 .wrap {
 	margin: 0 auto;
 	width:90%;
-	max-width: 1200px;
 }
 
 .site-inner {
 	clear: both;
 	padding-top: 40px;
-}
-
-.front-page .site-container .site-inner {
-    margin-top: 0;
-    width: 100%;
-    max-width: 100%;
 }
 
 /* ## Column Widths and Positions
@@ -30,7 +23,7 @@
 .content-sidebar-sidebar .content-sidebar-wrap,
 .sidebar-content-sidebar .content-sidebar-wrap,
 .sidebar-sidebar-content .content-sidebar-wrap {
-	@include structure(980, 1200);
+	width:100%;
 }
 
 .content-sidebar-sidebar .content-sidebar-wrap {
@@ -39,14 +32,14 @@
 
 .sidebar-content-sidebar .content-sidebar-wrap,
 .sidebar-sidebar-content .content-sidebar-wrap {
-	float: right;
+	float: left;
 }
 
 /* ### Content */
 
 .content {
-	float: right;
-	@include structure(800, 1200);
+	float: left;
+	width:100%;
 }
 
 .content-sidebar .content,
@@ -58,7 +51,7 @@
 .content-sidebar-sidebar .content,
 .sidebar-content-sidebar .content,
 .sidebar-sidebar-content .content {
-	@include structure(580, 1200);
+	width:100%;
 }
 
 .full-width-content .content {
@@ -68,78 +61,33 @@
 /* ### Primary Sidebar */
 
 .sidebar-primary {
-	float: right;
-	@include structure(360, 1200);
+	float: left;
+	width:100%;
 }
 
-.sidebar-content .sidebar-primary,
+
+.content-sidebar-sidebar .sidebar-primary,
+.sidebar-content-sidebar .sidebar-primary {
+	float:left;
+	width:100%;
+}
+
+.sidebar-content .sidebar-primary {
+	float: left;
+	width:100%;
+}
 .sidebar-sidebar-content .sidebar-primary {
 	float: left;
+	width:100%;
 }
 
 /* ### Secondary Sidebar */
 
 .sidebar-secondary {
 	float: left;
-	@include structure(180, 1200);
+	width:100%;
 }
 
 .content-sidebar-sidebar .sidebar-secondary {
-	float: right;
-}
-
-/* ## Column Classes
---------------------------------------------- */
-/* Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css */
-
-.five-sixths,
-.four-sixths,
-.one-fourth,
-.one-half,
-.one-sixth,
-.one-third,
-.three-fourths,
-.three-sixths,
-.two-fourths,
-.two-sixths,
-.two-thirds {
 	float: left;
-	margin-left: 2.564102564102564%;
-}
-
-.one-half,
-.three-sixths,
-.two-fourths {
-	width: 48.717948717948715%;
-}
-
-.one-third,
-.two-sixths {
-	width: 31.623931623931625%;
-}
-
-.four-sixths,
-.two-thirds {
-	width: 65.81196581196582%;
-}
-
-.one-fourth {
-	width: 23.076923076923077%;
-}
-
-.three-fourths {
-	width: 74.35897435897436%;
-}
-
-.one-sixth {
-	width: 14.52991452991453%;
-}
-
-.five-sixths {
-	width: 82.90598290598291%;
-}
-
-.first {
-	clear: both;
-	margin-left: 0;
 }

@@ -2,8 +2,10 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .genesis-nav-menu {
+	clear: both;
 	@include font(1.6, 2.4);
 	line-height: 1;
+	width: 100%;
 }
 
 .genesis-nav-menu .menu-item {
@@ -13,11 +15,9 @@
 
 .genesis-nav-menu a {
 	color: $color-black;
-	font-weight:400;
 	text-decoration: none;
 	display: block;
 	padding: 30px 24px;
-	text-transform:uppercase;
 }
 
 .genesis-nav-menu a:hover,
@@ -26,7 +26,7 @@
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus  {
 	color: $color-primary-one;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .genesis-nav-menu .sub-menu {
@@ -38,18 +38,18 @@
 	-ms-transition:     opacity .4s ease-in-out;
 	-o-transition:      opacity .4s ease-in-out;
 	transition:         opacity .4s ease-in-out;
-	width: 320px;
+	width: 200px;
 	z-index: 99;
 }
 
 .genesis-nav-menu .sub-menu a {
-	background-color: $color-primary-one;
-	border-bottom: 1px solid $color-white;
+	background-color: $color-white;
+	border: 1px solid $color-black;
 	border-top: 0;
-	@include font(1.6, 2.4);
+	@include font(1.4, 1.8);
 	padding: 20px;
 	position: relative;
-	width: 320px;
+	width: 200px;
 	word-wrap: break-word;
 }
 
@@ -111,7 +111,7 @@
 --------------------------------------------- */
 
 .site-header .sub-menu {
-	border-top: none;
+	border-top: 1px solid $color-black;
 }
 
 .site-header .sub-menu .sub-menu {
@@ -126,36 +126,30 @@
 --------------------------------------------- */
 
 .nav-primary {
-	display:block;
-	float:left;
-	width:100%;
-	text-align:center;
-}
-
-.nav-primary .genesis-nav-menu {
+	background-color: $color-black;
 }
 
 .nav-primary .genesis-nav-menu a {
-	color: $color-primary-one;
+	color: $color-white;
 	text-decoration: none;
 }
 
 .nav-primary .genesis-nav-menu a:hover,
 .nav-primary .genesis-nav-menu a:focus,
 .nav-primary .genesis-nav-menu .current-menu-item > a {
-	color: $color-black;
-	text-decoration: none;
+	color: $color-white;
+	text-decoration: underline;
 }
 
 .nav-primary .genesis-nav-menu .sub-menu a {
-	color: $color-white;
+	color: $color-black;
 }
 
 .nav-primary .genesis-nav-menu .sub-menu a:hover,
 .nav-primary .genesis-nav-menu .sub-menu a:focus,
 .nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a {
-	background-color: darken($color-primary-one, 10%);
-	text-decoration: none;
+	color: $color-primary-one;
+	text-decoration: underline;
 }
 
 /* ## Secondary Navigation
@@ -163,34 +157,4 @@
 
 .nav-secondary {
 	background-color: $color-white;
-	border-bottom:1px solid $color-primary-one;
-}
-
-.nav-secondary .genesis-nav-menu .sub-menu a {
-	color: $color-white;
-}
-
-.nav-secondary .genesis-nav-menu .sub-menu a:hover,
-.nav-secondary .genesis-nav-menu .sub-menu a:focus,
-.nav-secondary .genesis-nav-menu .sub-menu .current-menu-item > a {
-	background-color: darken($color-primary-one, 10%);
-	text-decoration: none;
-}
-
-/* Responsive Menu
---------------------------------------------- */
-
-.responsive-menu-icon {
-	cursor: pointer;
-	display: none;
-	margin-bottom: -1px;
-	text-align: center;
-}
-
-.responsive-menu-icon::before {
-	content: "\f333";
-	display: inline-block;
-	font: normal 20px/1 'dashicons';
-	margin: 0 auto;
-	padding: 10px;
 }

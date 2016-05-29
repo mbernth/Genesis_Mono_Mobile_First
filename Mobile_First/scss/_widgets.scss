@@ -31,7 +31,7 @@
 --------------------------------------------- */
 
 .featured-content .entry {
-	border-bottom: 2px solid $color-black;
+	border-bottom: 2px solid $color-background;
 	margin-bottom: 20px;
 	padding: 0 0 24px;
 }
@@ -41,5 +41,6 @@
 }
 
 .featured-content .entry-title {
-	@include font(2, 3.2);
+	font-size: 20px;
+	font-size: 2rem;
 }

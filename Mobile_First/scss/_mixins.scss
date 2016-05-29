@@ -10,19 +10,23 @@ $color-white: #ffffff;
 $color-black_rgb: rgb(255, 255, 255) ; /* White */
 
 /* Black */
-$color-black: #000000; /* Black */
-$color-black_rgb: rgb(0, 0, 0) ; /* Black */
+$color-black: #333; /* Black */
+$color-black_rgb: rgb(51, 51, 51); /* Black */
 
-/* Primary One (Cyan) */
-$color-primary-one: #00aeef; /* 100% Cyan */
-$color-primary-one_rgb: rgb(0, 174, 239) ; /* Cyan */
+/* Background */
+$color-background: #f5f5f5;
+$color-background_rgb: rgb(245, 245, 245);
+
+/* Primary One (Red) */
+$color-primary-one: #c3251d; /* 100% red */
+$color-primary-one_rgb: rgb(195, 37, 29) ; /* red */
 
 /* Typography
 --------------------------------------------- */
 
 /* Primary Font Faminly */
-$font-sans: 'Lato, sans-serif;
-$font-headlines: 'Lato, sans-serif;
+$font-bread: 'Lato', sans-serif;
+$font-headlines: 'Lato', sans-serif;
 
 /* Basic Font Sizes mixin */
 @mixin font-size($sizeValue: 1.6) {

@@ -14,9 +14,9 @@ body > div {
 }
 
 body {
-	background-color: $color-white;
+	background-color: $color-background;
 	color: $color-black;
-	font-family: $font-sans;
+	font-family: $font-bread;
 	@include font(1.8, 2.6);
 	font-weight: 300;
 	margin: 0;
@@ -69,7 +69,7 @@ hr {
 	border-collapse: collapse;
 	border-top: 1px solid $color-black;
 	clear: both;
-	margin: 28px 0;
+	margin: 1em 0;
 }
 
 b,
@@ -91,8 +91,7 @@ blockquote {
 blockquote::before {
 	content: "\201C";
 	display: block;
-	@include font(2.4, 3.2);
-	height: 0;
+	@include font(3, 3);
 	left: -20px;
 	position: relative;
 	top: -10px;
@@ -109,33 +108,33 @@ h4,
 h5,
 h6 {
 	color: $color-black;
-	font-family: $font-sans;
+	font-family: $font-headlines;
 	font-weight: 400;
 	margin: 0 0 10px;
 }
 
 h1 {
-	@include font(3.6, 3.2);
+	@include font(3.6, 3.6);
 }
 
 h2 {
-	@include font(3, 3.2);
+	@include font(3, 3);
 }
 
 h3 {
-	@include font(2.4, 3.2);
+	@include font(2.4, 2.4);
 }
 
 h4 {
-	@include font(2, 3.2);
+	@include font(2.0, 2.0);
 }
 
 h5 {
-	@include font(1.8, 2.6);
+	@include font(1.8, 1.8);
 }
 
 h6 {
-	@include font(1.6, 2.4);
+	@include font(1.6, 1.6);
 }
 
 /* ## Objects
@@ -212,7 +211,7 @@ img {
 
 .gallery img:hover,
 .gallery img:focus {
-	border: 1px solid $color-black;
+	border: 1px solid #999;
 }
 
 /* ## Forms
@@ -224,7 +223,7 @@ textarea {
 	background-color: $color-white;
 	border: 1px solid $color-black;
 	color: $color-black;
-	@include font(1.8, 2.6);
+	@include font(1.6, 2.4);
 	font-weight: 300;
 	padding: 16px;
 	width: 100%;
@@ -258,11 +257,11 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button {
-	background-color: $color-primary-one;
+	background-color: $color-black;
 	border: 0;
 	color: $color-white;
 	cursor: pointer;
-	@include font(1.8, 2.6);
+	@include font(1.6, 2.4);
 	font-weight: 300;
 	padding: 16px 24px;
 	text-transform: uppercase;
@@ -279,7 +278,7 @@ input:focus[type="button"],
 input:focus[type="reset"],
 input:focus[type="submit"],
 .button:focus  {
-	background-color: darken($color-primary-one, 10%);
+	background-color: $color-primary-one;
 	color: $color-white;
 }
 

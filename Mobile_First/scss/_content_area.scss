@@ -33,7 +33,7 @@
 
 .entry-content code {
 	background-color: $color-black;
-	color: $color-primary-one;
+	color: $color-white;
 }
 
 /* ## Entry Meta
@@ -49,7 +49,7 @@ p.entry-meta {
 }
 
 .entry-footer .entry-meta {
-	border-top: 2px solid $color-white;
+	border-top: 2px solid $color-background;
 	padding-top: 24px;
 }
 
@@ -80,7 +80,7 @@ p.entry-meta {
 }
 
 .archive-pagination li a {
-	background-color: $color-primary-one;
+	background-color: $color-black;
 	color: $color-white;
 	cursor: pointer;
 	display: inline-block;
@@ -92,8 +92,8 @@ p.entry-meta {
 .archive-pagination li a:hover,
 .archive-pagination li a:focus,
 .archive-pagination .active a {
-	background-color: darken($color-primary-one, 10%);
-	text-decoration: none;
+	background-color: $color-primary-one;
+	text-decoration: underline;
 }
 
 /* ## Comments
@@ -102,7 +102,7 @@ p.entry-meta {
 .comment-respond,
 .entry-comments,
 .entry-pings {
-	border-top:1px solid $color-black;
+	background-color: $color-white;
 	margin-bottom: 40px;
 }
 
@@ -120,7 +120,8 @@ p.entry-meta {
 }
 
 li.comment {
-	border: 2px solid $color-black;
+	background-color: $color-background;
+	border: 2px solid $color-white;
 	border-right: 0;
 }
 
@@ -161,6 +162,7 @@ li.comment {
 }
 
 .form-allowed-tags {
+	background-color: $color-background;
 	@include font(1.6, 2.4);
 	padding: 24px;
 }
